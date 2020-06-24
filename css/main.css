@@ -1,0 +1,509 @@
+
+body {
+
+    font-family: arial , halvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+  	margin: 0;
+  	padding: 0;
+    background-color: #f4f4f4;
+
+/*	background-size: cover;
+	background-repeat: no-repeat;*/
+	/*background-position: center;*/
+    /* background-image: url('images/demo2.jpg'); */
+}
+/*Global container*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+/* ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+} */
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:5px; 
+  min-height:10px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:14px;
+}
+
+header li{
+  /* float: left; */
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  /* background-color: #35424a; */
+  float:left;
+  color: #000000;
+  text-align: center;
+  margin-left: 18px;
+  height: 300px;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+
+
+/* Showcase */
+#showcase{
+  min-height:450px;
+
+  background:url('./images/demo1.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#000000;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:69px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #banner h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+
+footer{
+  align-self: bottom;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  min-height: 40px; 
+  overflow: hidden;
+  color: #ffffff;
+  margin-bottom: 3px;
+  background-color:#e8491d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login containers*/
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+#cont{
+  min-height:80%;
+margin-top: 50%;
+  background:url('./images/demo1.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#000000;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #f85757;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+
+
+.Registerbox{
+
+    width: 510px;
+    height: 950px;
+    background: #000;
+    color: #fff;
+    top: 70%;
+    left: 50%;
+    scroll-behavior: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+/*
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+
+}*/
+
+
+.Registernbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.Registerbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Registerbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Registerbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Registerbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #f85757;
+    color: #000;
+}
+.Registerbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.Registerbox a:hover
+{
+    color: #ffc107;
+}
+
+
+
+/* SUBCRIBE */
+/*
+.Subscribe{
+
+    min-height:450px;
+      background: url(demo1.jpg);
+  background:url(demo1.jpg) no-repeat 0 -400px;
+    text-align:center;
+    width: 510px;
+
+    background: #000;
+    color: #fff;
+    top: 70%;
+    left: 50%;
+    scroll-behavior: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.Subscribe p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.Subscribe input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Subscribe input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Subscribe input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Subscribe input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #f85757;
+    color: #000;
+}
+.Subscribe a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.Subscribe a:hover
+{
+    color: #ffc107;
+} */
